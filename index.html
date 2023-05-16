@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css"/>
+    
+    <title>project1</title>
+</head>
+<body>
+    <header>
+     <div class="navbar">
+        <div class="logo"><a href="#">DEMI & CO</a></div>
+            <ul class="links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        <a href="#" class="action_btn">Get Started</a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div> 
+    </div>
+    <div class="dropdown_menu open">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" class="action_btn">Get Started</a></li>
+    </div>
+
+    <script>
+        const toggleBtn = document.querySelector(".toggle_btn");
+        const toggleBtnIcon = document.querySelector(".toggle_btn i");
+        const dropDownMenu = document.querySelector(".dropdown_menu");
+       
+        toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
+
+        toggleBtnIcon.classList = isOpen
+        ? "fa-solid fa-xmark"
+        : "fa-solid fa-bars";
+    };
+
+    </script>
+    
+    
+    </header>
+    <main>
+        <section id="hero">
+            <h1>Welcome</h1>
+            <p>
+            Frontend development refers to the process of creating the user interface (UI) and user experience (UX) for websites and web applications.<br/> It involves coding and designing the client-side components that users interact with directly in their browsers.
+            </p>
+        </section>
+    </main>
+    <footer>
+            <div class="footer-content">
+                <p>&copy; 2023 DEMI & CO.<br/> All rights reserved.</p>
+            <nav>
+                <ul class="footer-icons">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </nav>
+
+                
+            </div>
+
+        
+        
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    
+</body>
+</html>
